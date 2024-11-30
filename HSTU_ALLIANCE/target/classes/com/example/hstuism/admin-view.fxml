@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="589.0" prefWidth="808.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hstuism.HstuAllianceController">
+   <children>
+      <TableView fx:id="tableViewAdmin" layoutX="10.0" layoutY="94.0" prefHeight="323.0" prefWidth="757.0">
+         <columns>
+            <TableColumn fx:id="idColumnAdmin" prefWidth="93.0" text="Student ID" />
+            <TableColumn fx:id="nameColumnAdmin" prefWidth="67.0" text="Name" />
+            <TableColumn fx:id="facultyColumnAdmin" prefWidth="63.0" text="Faculty" />
+            <TableColumn fx:id="batchColumnAdmin" prefWidth="76.0" text="Batch" />
+            <TableColumn fx:id="ditrictColumnAdmin" prefWidth="82.0" text="District" />
+            <TableColumn fx:id="phoneColumnAdmin" prefWidth="111.0" text="Phone/Email" />
+            <TableColumn fx:id="hallColumnAdmin" text="Hall" />
+            <TableColumn fx:id="passwordColumnAdmin" prefWidth="158.0" text="Password" />
+         </columns>
+      </TableView>
+      <Button layoutX="679.0" layoutY="474.0" mnemonicParsing="false" onAction="#removeUserAction" style="-fx-background-color: green;" text="Remove User:" textFill="#f8f7f7" />
+      <Button layoutX="679.0" layoutY="513.0" mnemonicParsing="false" onAction="#updateAction" prefHeight="25.0" prefWidth="89.0" style="-fx-background-color: green;" text="Update Data:" textFill="WHITE" />
+      <ChoiceBox fx:id="myHallNameInput" layoutX="502.0" layoutY="435.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="myNameAdmin" layoutX="106.0" layoutY="435.0" prefHeight="25.0" prefWidth="79.0" promptText="Name" />
+      <TextField fx:id="myIdAdmin" layoutX="37.0" layoutY="435.0" prefHeight="25.0" prefWidth="57.0" promptText="Student Id" />
+      <TextField fx:id="myPhoneNumberAdmin" layoutX="194.0" layoutY="435.0" prefHeight="25.0" prefWidth="117.0" promptText="mobile" />
+      <Button fx:id="addAdmin" layoutX="679.0" layoutY="435.0" mnemonicParsing="false" onAction="#addUserAction" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: green;" text="Add User" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <PasswordField fx:id="myPasswordCreatAdmin" layoutX="321.0" layoutY="435.0" prefHeight="25.0" prefWidth="136.0" promptText="password" />
+      <ChoiceBox fx:id="myDistrictNameInput" layoutX="617.0" layoutY="435.0" prefHeight="25.0" prefWidth="57.0" />
+      <Text fill="WHITE" layoutX="565.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="District:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="470.0" layoutY="452.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hall:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="idRemoveField" layoutX="525.0" layoutY="474.0" promptText="Give Id" />
+      <TextField fx:id="oldData" layoutX="364.0" layoutY="513.0" promptText="old" />
+      <TextField fx:id="newData" layoutX="525.0" layoutY="513.0" promptText="new" />
+      <Button fx:id="mySubmit1" layoutX="331.0" layoutY="550.0" mnemonicParsing="false" onAction="#exitAdmin" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <Text fill="WHITE" layoutX="290.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Panel">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Text>
+      <Button fx:id="addAdmin1" layoutX="101.0" layoutY="39.0" mnemonicParsing="false" onAction="#showAllAction" prefHeight="17.0" prefWidth="89.0" style="-fx-background-color: green;" text="Show All" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
